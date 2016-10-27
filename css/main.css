@@ -8,8 +8,13 @@ body {
 .header {
   display: block;
   margin: 0 auto;
-  position: fixed;
+  position: absolute;
+  bottom: 2vw;
   left: 40%;
+  z-index: 4;
+  color: white;
+  /*padding-top: 345px;*/
+  line-height: 0;
 }
 
 .header img {
@@ -24,24 +29,24 @@ body {
 /*screen frame*/
 
 .outerborder {
-  height: calc(calc(100vh - 2vw) - 60px);
+  height: calc(100vh - 2vw);
   min-height: 400px;
   width: 98vw;
   background-color: black;
   border-radius: 4vw;
   position: fixed;
-  top: calc(1vw + 60px);
+  top: 1vw;
   left: 1vw;
   z-index: 0;
 }
 
 .innerborder {
-  height: calc(calc(100vh - 8vw) - 60px);
-  min-height: calc(calc(400px - 6vw) - 60px);
+  height: calc(calc(100vh - 7vw) - 50px);
+  min-height: calc(calc(400px - 5vw) - 50px);
   width: 92vw;
   background-color: white;
   position: fixed;
-  top: calc(4vw + 60px);
+  top: 4vw;
   left: 4vw;
   z-index: 1;
 }
@@ -52,10 +57,9 @@ body {
   height: 100px;
   width: 92vw;
   position: fixed;
-  top: calc(4vw + 60px);
+  top: 4vw;
   left: 4vw;
   z-index: 2;
-  /*background-color: #20B2AA;*/
 }
 
 nav{
@@ -94,14 +98,13 @@ nav li a:hover{
 /*content*/
 
 .content {
-  height: calc(calc(100vh - 8vw) - 160px);
-  min-height: calc(calc(400px - 6vw) - 100px);
+  height: calc(calc(100vh - 7vw) - 150px);
+  min-height: calc(calc(400px - 5vw) - 150px);
   width: 92vw;
-  background-color: white;
   z-index: 3;
   margin: 4vw;
   position: absolute;
-  top: 160px;
+  top: 100px;
   left: 0;
   overflow-y: scroll;
 }
