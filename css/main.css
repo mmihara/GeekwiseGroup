@@ -92,15 +92,16 @@ nav li a:hover{
 /*content*/
 
 .content {
-  height: calc(calc(100vh - 8vw) - 150px);
-  min-height: calc(calc(400px - 5vw) - 150px);
-  width: 92vw;
+  height: calc(calc(100vh - 8vw) - 151px);
+  min-height: calc(calc(400px - 5vw) - 151px);
+  width: calc(92vw - 9px);
   z-index: 3;
   margin: 4vw;
   position: absolute;
   top: 100px;
   left: 0;
   overflow-y: scroll;
+  padding-left: 8px;
 }
 
 .content img {
